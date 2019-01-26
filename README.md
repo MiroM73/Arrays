@@ -45,15 +45,9 @@ S=11  {4, 2, 5}.
 figures below and prints them formatted to the console. The size of the 
 matrices will be read from the console. See the examples for matrices 
 with size of 4 x 4 and make the other sizes in a similar fashion:
-
-          a)
-            
-    |||||
-    |:-:|:-:|:--:|:--:|
-    | 1 | 5 |  9 | 13 |    
-    | 2 | 6 | 10 | 14 |
-    | 3 | 7 | 11 | 15 |
-    | 4 | 8 | 12 | 16 |
+<p align="center"> 
+<img src="https://github.com/MiroM73/Images/blob/master/c_Sharp_Chap7_Ex12.png">
+</p>
 
     
 13. Write a program, which creates a rectangular array with size of n by m 
@@ -63,6 +57,10 @@ console. Find a platform with size of (3, 3) with a maximal sum.
 14. Write a program, which finds the longest sequence of equal string 
 elements in a matrix. A sequence in a matrix we define as a set of 
 neighbor elements on the same row, column or diagonal. 
+<p align="center"> 
+<img src="https://github.com/MiroM73/Images/blob/master/c_Sharp_Chap7_Ex14.png">
+</p>
+
 
 15. Write a program, which creates an array containing all Latin letters. 
 The user inputs a word from the console and as result the program 
