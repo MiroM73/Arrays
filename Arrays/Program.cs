@@ -66,13 +66,59 @@ namespace Arrays
                 Console.WriteLine();
             }
 
+            EndOfScript();
+
             //1.Write a program, which creates an array of 20 elements of type
             //integer and initializes each of the elements with a value equals to the
             //index of the element multiplied by 5.Print the elements to the console.
+            Console.WriteLine("EX1: Create an array of 20 elements with values index * 5.");
+            int[] arrayExerciseOne = new int[20];
+            for (int i = 0; i < arrayExerciseOne.Length; i++)
+            {
+                arrayExerciseOne[i] = i * 5;
+            }
+            foreach (var item in arrayExerciseOne)
+            {
+                Console.Write(item + " ");
+            }
+            Console.WriteLine();
+            EndOfScript();
 
             //2.Write a program, which reads two arrays from the console and checks
             //whether they are equal(two arrays are equal when they are of equal
             //length and all of their elements, which have the same index, are equal). 
+            Console.WriteLine("EX2: Enter two arrays and I will check if they are equal");
+            Console.Write("First array, split elements by comma: ");
+            string inputStringOne = Console.ReadLine();            
+            string[] arrayOne = inputStringOne.Split(new char[] { ',' });
+            Console.Write("Second array, split elements by comma: ");
+            string inputStringTwo = Console.ReadLine();
+            string[] arrayTwo = inputStringTwo.Split(new char[] { ',' });
+            bool arraysAreEqual = true;
+            if (arrayOne.Length != arrayTwo.Length)
+            {
+                Console.WriteLine("The arrays have different number of elements.");
+            }
+            else
+            {                
+                for (int i = 0; i < arrayOne.Length; i++)
+                {
+                    if (arrayOne[i] != arrayTwo[i])
+                    {
+                        arraysAreEqual = false;
+                        break;
+                    }
+                }
+                if (arraysAreEqual)
+                {
+                    Console.WriteLine("Arrays are equal.");
+                }
+                else
+                {
+                    Console.WriteLine("Arrays are different.");
+                }
+            }
+
 
             //3.Write a program, which compares two arrays of type char
             //lexicographically(character by character) and checks, which one is first
@@ -164,6 +210,12 @@ namespace Arrays
             //cells(by row and column).Here is one example with an area containing
             //13 elements with equal value of 3: 
 
+        }
+
+        static void EndOfScript()
+        {
+            Console.WriteLine(new String('#',80));
+            Console.WriteLine();
         }
     }
 }
